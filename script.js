@@ -125,7 +125,7 @@ company.giveBonus(10);
 
 function calculateAverage(scores) {
     scores.reduce((accum, item) => 
-    console.log(accum = (accum + item)/scores.length) 
+    console.log(accum = (accum + item)/2) 
 , scores[0])
 }
 
