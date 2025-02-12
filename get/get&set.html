@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+	class Rectangle {
+    _heigth;
+    _width;
+    constructor(heigth, width) {
+		this._heigth = heigth;
+    this._width = width;
+    }
+    get heigth() {
+      return this._heigth;
+    }
+    get width() {
+    return this._width;
+    }
+    set heigth(value) {
+      this._heigth = value > 0 ? value : '';
+    }
+    
+    set width(value) {
+      this._width = value > 0 ? value : '';
+    }
+    
+    get area() {
+      return this._heigth*this._width;
+    }
+    
+    get perimeter() {
+      return this._heigth*2+this._width*2;
+    }
+  }
+    
+    let rec = new Rectangle(12, 5);
+    rec.heigth = 15;
+    rec.width = 3;
+    console.log(rec.heigth);
+    console.log(rec.width);
+    console.log(rec.area);
+    console.log(rec.perimeter);
+    </script>
+</body>
+</html>
